@@ -3,6 +3,7 @@
 Little road editor
 
   - Be the major of a city comprised only of roads!
+  - Move with arrow keys, toggle road with any other key.
   - Thats it.
 
 ### Installation

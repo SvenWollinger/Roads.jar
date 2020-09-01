@@ -27,26 +27,26 @@ public class Render extends JPanel{
 					boolean r = t(x+1,y);
 					
 					if(img == null) if(!t && !b && !l && !r) img = end;
-					if(img == null) if(t && b && l && r) img = cross;
+					if(img == null) if( t &&  b &&  l &&  r) img = cross;
 					
-					if(img == null) if(!t && !b && l && r) img = straight_horizontal;
-					if(img == null) if(!t && !b && l && !r) img = end_right;
-					if(img == null) if(!t && !b && !l && r) img = end_left;
+					if(img == null) if(!t && !b &&  l &&  r) img = straight_horizontal;
+					if(img == null) if(!t && !b &&  l && !r) img = end_right;
+					if(img == null) if(!t && !b && !l &&  r) img = end_left;
 					
-					if(img == null) if(t && b && !l && !r) img = straight_vertical;
-					if(img == null) if(t && !b && !l && !r) img = end_bottom;
-					if(img == null) if(!t && b && !l && !r) img = end_top;
+					if(img == null) if( t &&  b && !l && !r) img = straight_vertical;
+					if(img == null) if( t && !b && !l && !r) img = end_bottom;
+					if(img == null) if(!t &&  b && !l && !r) img = end_top;
 					
-					if(img == null) if(!t && b && l && !r) img = corner_topright;
-					if(img == null) if(!t && b && !l && r) img = corner_topleft;
+					if(img == null) if(!t &&  b &&  l && !r) img = corner_topright;
+					if(img == null) if(!t &&  b && !l &&  r) img = corner_topleft;
 					
-					if(img == null) if(t && !b && !l && r) img = corner_bottomleft;
-					if(img == null) if(t && !b && l && !r) img = corner_bottomright;
+					if(img == null) if( t && !b && !l &&  r) img = corner_bottomleft;
+					if(img == null) if( t && !b &&  l && !r) img = corner_bottomright;
 					
-					if(img == null) if(t && !b && l && r) img = junc_top;
-					if(img == null) if(!t && b && l && r) img = junc_bottom;
-					if(img == null) if(t && b && l && !r) img = junc_left;
-					if(img == null) if(t && b && !l && r) img = junc_right;
+					if(img == null) if( t && !b &&  l &&  r) img = junc_top;
+					if(img == null) if(!t &&  b &&  l &&  r) img = junc_bottom;
+					if(img == null) if( t &&  b &&  l && !r) img = junc_left;
+					if(img == null) if( t &&  b && !l &&  r) img = junc_right;
 				}
 				g.drawImage(img, x*tileSize, y*tileSize, tileSize, tileSize, null);
 				g.drawRect(x*tileSize, y*tileSize, tileSize, tileSize);
