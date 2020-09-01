@@ -3,6 +3,8 @@ import javax.swing.JFrame;
 
 public class Main {
 	
+	public static String version = "20200901_1";
+	
 	public static Render render;
 	public static JFrame wnd;
 	
@@ -16,6 +18,7 @@ public class Main {
 		wnd.add(render);
 		wnd.addKeyListener(new KeyInput());
 		wnd.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		wnd.setTitle("Roads.jar");
 		wnd.setVisible(true);
 	}
 
